@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="h2.css">
+</head>
+<body>
+    <label>Enter your name</label><br>
+    <input type="text" name="name"><br><br>
+
+    <label>Enter your age</label><br>
+    <input type="number" name="age"><br><br>
+
+    <label for="dob">Date of birth</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="Gender" id="male" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" name="Gender" id="female" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" name="Gender" id="other" value="other">
+    <label for="other">Other</label><br><br>
+
+    <label for="country">Country:</label><br>
+    <select name="country" id="country" required>
+    <option value="">--select--</option>
+    <option value="India">India</option>
+    <option value="USA">USA</option>
+    <option value="Japan">Japan</option>
+    <option value="Korea">Korea</option>
+    <option value="France">France</option>
+    <option value="Paris">Paris</option>
+    </select><br><br>
+
+    <label for="skills">Skills:</label><br>
+    <input type="checkbox" name="skills" value="HTML"> HTML
+    <input type="checkbox" name="skills" value="CSS"> CSS
+    <input type="checkbox" name="skills" value="Javascript"> Javascript <br><br>
+
+    <label for="resume">Upload resume</label>
+    <input type="file" id="resume" name="resume" required><br><br>
+
+    <input type="submit" value="Register">
+</body>
+</html>
