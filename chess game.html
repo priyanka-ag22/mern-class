@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chess Board</title>
+  <style>
+    body {
+      text-align: center;
+      background-image: url('https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/PedroPinhata/phpVmOHiw.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    td {
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    .selected {
+      outline: 3px solid red;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Interactive Chess Board</h2>
+<table id="chessboard" border="1" cellspacing="0" cellpadding="0"></table>
+
+<script>
+const boardElement = document.getElementById('chessboard');
+
+let gameBoard = [
+  ['elephant black.jpeg','black horse.jpeg','black knight.jpeg','black king.jpeg','black queen.jpeg','black knight.jpeg','black horse.jpeg','elephant black.jpeg'],
+  ['download.jpeg','download.jpeg','download.jpeg','download.jpeg','download.jpeg','download.jpeg','download.jpeg','download.jpeg'],
+  ['','','','','','','',''],
+  ['','','','','','','',''],
+  ['','','','','','','',''],
+  ['','','','','','','',''],
+  ['chess-pawn-500x500.webp','chess-pawn-500x500.webp','chess-pawn-500x500.webp','chess-pawn-500x500.webp','chess-pawn-500x500.webp','chess-pawn-500x500.webp','chess-pawn-500x500.webp','chess-pawn-500x500.webp'],
+  ['white elephant.jpeg','white horse.jpeg','white knight.jpeg','chess-piece-white-king-6801260.webp','white queen.jpeg','white knight.jpg','white horse.jpeg','white elephant.jpeg']
+];
+
+let selected = null;
+
+function getColor(row, col) {
+  return (row + col) % 2 === 0 ? 'white' : 'black';
+}
+
+function drawBoard() {
+  boardElement.innerHTML = '';
+  for(let i = 0; i < 8; i++) {
+    const row = boardElement.insertRow();
+    for(let j = 0; j < 8; j++) {
+      const cell = row.insertCell();
+      cell.style.backgroundColor = getColor(i,j);
+      if(gameBoard[i][j] !== '') {
+        const img = document.createElement('img');
+        img.src = gameBoard[i][j];
+        img.width = 40;
+        img.height = 40;
+        cell.appendChild(img);
+      }
+      cell.dataset.row = i;
+      cell.dataset.col = j;
+      cell.onclick = () => cellClick(i,j);
+      if(selected && selected.row === i && selected.col === j) {
+        cell.classList.add('selected');
+      }
+    }
+  }
+}
+
+function cellClick(row, col) {
+  if(selected) {
+    gameBoard[row][col] = gameBoard[selected.row][selected.col];
+    gameBoard[selected.row][selected.col] = '';
+    selected = null;
+    drawBoard();
+  } else if(gameBoard[row][col] !== '') {
+    selected = {row, col};
+    drawBoard();
+  }
+}
+
+drawBoard();
+</script>
+
+</body>
+</html>
