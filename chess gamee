@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <title>Chess Board</title>
 </head>
-<body background="https://www.shutterstock.com/image-vector/chess-board-chequer-pattern-checker-600nw-2540426555.jpg"align="center">
+<body background="https://www.shutterstock.com/image-vector/chess-board-chequer-pattern-checker-600nw-2540426555.jpg" align="center">
 
   <table border="1" cellspacing="0" cellpadding="0" align="center">
-   
     <tr>
       <td bgcolor="black" width="60" height="60"><img src="elephant black.jpeg" width="40" height="40"></td>
       <td bgcolor="white" width="60" height="60"><img src="black horse.jpeg" width="40" height="40"></td>
@@ -19,7 +18,6 @@
       <td bgcolor="white" width="60" height="60"><img src="elephant black.jpeg" width="40" height="40"></td>
     </tr>
 
-    
     <tr>
       <td bgcolor="white" width="60" height="60"><img src="download.jpeg" width="40" height="40"></td>
       <td bgcolor="black" width="60" height="60"><img src="download.jpeg" width="40" height="40"></td>
@@ -31,31 +29,6 @@
       <td bgcolor="black" width="60" height="60"><img src="download.jpeg" width="40" height="40"></td>
     </tr>
 
-   
-    <tr>
-      <td bgcolor="black" width="60" height="60"></td>
-      <td bgcolor="white" width="60" height="60"></td>
-      <td bgcolor="black" width="60" height="60"></td>
-      <td bgcolor="white" width="60" height="60"></td>
-      <td bgcolor="black" width="60" height="60"></td>
-      <td bgcolor="white" width="60" height="60"></td>
-      <td bgcolor="black" width="60" height="60"></td>
-      <td bgcolor="white" width="60" height="60"></td>
-    </tr>
-
-   
-    <tr>
-      <td bgcolor="white" width="60" height="60"></td>
-      <td bgcolor="black" width="60" height="60"></td>
-      <td bgcolor="white" width="60" height="60"></td>
-      <td bgcolor="black" width="60" height="60"></td>
-      <td bgcolor="white" width="60" height="60"></td>
-      <td bgcolor="black" width="60" height="60"></td>
-      <td bgcolor="white" width="60" height="60"></td>
-      <td bgcolor="black" width="60" height="60"></td>
-    </tr>
-
-   
     <tr>
       <td bgcolor="black" width="60" height="60"></td>
       <td bgcolor="white" width="60" height="60"></td>
@@ -78,7 +51,28 @@
       <td bgcolor="black" width="60" height="60"></td>
     </tr>
 
-   
+    <tr>
+      <td bgcolor="black" width="60" height="60"></td>
+      <td bgcolor="white" width="60" height="60"></td>
+      <td bgcolor="black" width="60" height="60"></td>
+      <td bgcolor="white" width="60" height="60"></td>
+      <td bgcolor="black" width="60" height="60"></td>
+      <td bgcolor="white" width="60" height="60"></td>
+      <td bgcolor="black" width="60" height="60"></td>
+      <td bgcolor="white" width="60" height="60"></td>
+    </tr>
+
+    <tr>
+      <td bgcolor="white" width="60" height="60"></td>
+      <td bgcolor="black" width="60" height="60"></td>
+      <td bgcolor="white" width="60" height="60"></td>
+      <td bgcolor="black" width="60" height="60"></td>
+      <td bgcolor="white" width="60" height="60"></td>
+      <td bgcolor="black" width="60" height="60"></td>
+      <td bgcolor="white" width="60" height="60"></td>
+      <td bgcolor="black" width="60" height="60"></td>
+    </tr>
+
     <tr>
       <td bgcolor="black" width="60" height="60"><img src="chess-pawn-500x500.webp" width="40" height="40"></td>
       <td bgcolor="white" width="60" height="60"><img src="chess-pawn-500x500.webp" width="40" height="40"></td>
@@ -90,7 +84,6 @@
       <td bgcolor="white" width="60" height="60"><img src="chess-pawn-500x500.webp" width="40" height="40"></td>
     </tr>
 
-   
     <tr>
       <td bgcolor="white" width="60" height="60"><img src="white elephant.jpeg" width="40" height="40"></td>
       <td bgcolor="black" width="60" height="60"><img src="white horse.jpeg" width="40" height="40"></td>

@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="h2.css">
-    <style>
-        body{
+body{
             align-items: center;
             flex-direction: column;
             margin-left: 550px;
@@ -19,7 +11,7 @@
             margin:2px;
             padding:2px;
             color: black;
-            background-color:rgb(16, 17, 90);
+            background-color:rgb(87, 89, 176);
             width:max-content;
             margin-bottom: 20px;
             border-radius: 20px;
@@ -77,48 +69,3 @@
             text-align: left;
             align-items: center;
         }
-    </style>
-</head>
-<body>
-    <h1>-----Job application form-----</h1>
-    <div id="t12">
-    <div class="perinfo">
-        <h3>Personal Information</h3>
-        <label>First name:</label><br><br><br>
-        <input type="text" name="name"><br><br><br>
-        <label>Last name:</label><br><br>
-        <input type="text" name="name"><br><br><br>
-        <label>Number:</label><br><br>
-        <input type="number" name="number"><br><br><br>
-        <label>Email:</label><br><br>
-        <input type="email" name="email"><br><br>
-    </div>
-    <div class="jobinfo">
-    <h3>Job Information</h3>
-    <label for="paf">Position applied for:</label><br><br>
-    <select name="paf" id="paf" required><br><br>
-    <option value="">--select--</option>
-    <option value="manager">Manager</option>
-    <option value="HR">HR</option>
-    <option value="data analyst">Data analyst</option>
-    <option value="technician">Technician</option>
-    </select><br><br>
-    <label>Years of experience:</label><br><br>
-    <input type="number" name="number"><br><br>
-     <label for="resume">Upload resume:</label><br><br>
-    <input type="file" id="resume" name="resume" required><br><br>
-    </div>
-    <div class="availability">
-        <h3>Availability</h3>
-        <label>Available start date:</label><br><br>
-        <input type="date" id="dob" name="dob" required><br><br>
-        <label for="wtr">Willing to relocate?</label><br><br>
-        <input type="radio" name="wtr" id="yes" value="yes">
-    <label for="yes">Yes</label><br>
-    <input type="radio" name="wtr" id="no" value="no">
-    <label for="no">No</label><br>
-    </div>
-    <input type="submit" value="Register">
-    </div>
-</body>
-</html>
